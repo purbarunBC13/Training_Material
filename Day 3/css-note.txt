@@ -1,0 +1,543 @@
+CSS Basic
+==========================================================
+ 
+
+=> CSS TUTORIAL 
+======================
+=> Why learn css ?
+
+=> How to css help us
+
+=> Software requirement
+	-> CSS Editor
+	-> Browser
+	
+=> Html editor
+	-> notepade
+	-> notepade++
+	-> vs code
+	-> subline
+	-> dreamweaver
+	
+=> CSS Implementation
+	-> 3 ways to implementation css
+		1. Inline Style
+		2. Inpage Style tag
+		3. External Style Sheet
+============================================================		
+=> 1. Css color & Background-Color
+============================================================
+ => example :
+	
+	<h1 style="color: #3300cc;background-color: yellow;">Hello World</h1>
+
+    <p style="color: green;background-color: tan;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec  turpis.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, <span style="background-color: pink;">consectetur adipiscing elit.</span> Donec quis lectus ac   porta convallis ut non turpis.
+    </p>
+	
+
+
+============================================================
+=> 2. CSS Basic Selector
+============================================================
+	-> type of basic selector
+		-> by tag name
+		-> Class 
+		-> Id
+	-> Id Selector Vs Class Selector
+      -> Id can use only on time in one page
+	  -> class can use multiple time in one page
+	
+	-> Descendant Selector
+============================================================   
+=> 3. CSS Border
+============================================================
+	-> border properties
+		-> border-width
+				2px
+		-> border-style
+			solid, dotted, dashed, double, groove, ridge, inset, outset, none, mix
+			
+		-> border-color
+				red
+				
+	-> border shorthand
+		-> 2px solid red;
+		-> border-width:2px;
+		   border-style:solid
+		   border-color:red;
+		   
+	-> border-side
+		-> border-top
+		   border-right
+		   border-left
+		   border-bottom
+		h1{
+			border-width:2px;
+			border-style: solid dotted dashed inset 
+		}		
+	    solid = top  
+		dotted = right
+		dashed = bottom
+		inset= left
+		
+		.box3{
+            border-width:2px 5px 10px 8px;
+			border-style: solid dotted dashed inset ;
+            border-color: red;
+        }
+		
+	-> border shorthand
+		-> 2px solid red;
+       [ each side 2px, border style solid, boder color red ]		
+	   
+	-> border on side  
+	
+		h1{
+		border-bottom : 2px solid red;
+	
+		}
+		
+============================================================
+		
+=> 4. CSS Padding
+============================================================
+
+ =>  Padding properties
+	-> padding-top
+	-> padding-right
+	-> pading-bottom
+	-> padding-left
+	
+ => CSS How Padding Work ?
+	-> padding vitor theke gap create kore
+	-> padding shorthand
+	
+		h1{
+			padding-top:2px;
+			padding-right:2px;
+			padding-bottom:2px;
+			padding-left:2px;
+		}
+
+		h1{
+			padding:10px 15px 12px 14px [ top, right, bottom, left]
+		}
+		
+		h1{
+			padding:2px [ each side will be 2px]
+		}
+============================================================		
+		
+=> 5. Outline 		
+============================================================
+ => Outline Properties
+	-> outline-width
+	-> outline-style
+	-> outline-color
+	-> outline-offset ( offset = border and outline er modhye gap create korbe) 
+
+ => outline style
+	-> solid, dotted, dashed, double, groove, ridge, inset, outset, none, mix
+	
+ => outline shorthand
+	-> h1{
+		outline-width:2px;
+		outline-style : dashed
+		outline-color: red
+	
+	}
+	
+	-> h1{
+		outline:2px solid red
+	}
+		
+	-> p{
+
+		border-3px solid red;
+		outline-width: 2px;
+		outline-style:dashed;
+		outline-color:black;
+		outline-offset: 4px;
+	}
+	
+============================================================
+	
+=> 6. CSS Margin  
+============================================================
+ => Margin How its work ?
+	-> margin baire theke gap create kore.
+	
+	-> maring shorthand
+		-> h1{
+		
+			margin-top:10px;
+			margin-right:10px
+			margin-bottom:10px
+			margin-left:10px
+		}
+		
+		h1{
+			margin:10px;
+		}
+		
+		h1{
+			margin:10px 2px 5px 3px (top, right, bottom, left);
+		}
+		
+	-> margin auto
+		-> margin auto use kore amra kono div ke center e ante pari 
+		-> div ke center e ante hole and must div er width dite hobe
+		
+			.box1{
+				 width: 500px;
+				margin-top: 10;
+				margin-right: auto;
+				margin-bottom: 5px;
+				margin-left: auto;
+				
+		   } 
+	   -> shorhand margin auto  
+		   .box1 {
+			  width: 200px;
+			  background-color: blue;
+			  border-width: 8px;
+			  border-color: red;
+			  border-style: solid dotted dashed inset;
+			  margin: 0 auto; (top=0, bottom=0, left=0, right=0)
+			}
+============================================================	
+		
+=> 7. Height & Width 	
+============================================================		
+	=> verticale  = height ( top to bottom )
+	=> horizontl  = width  ( left to right )
+	=> exmp : 
+		    .box2 {
+			  width: 100%;
+			  border:1px solid red;
+			}
+			.box2 {
+			  width: 700px;
+			  border: 1px solid red;
+			}
+	=> width: 100% dile div ti responsive hobe jeta width:500px dile hoto na
+	
+  => Height Issue :
+  
+	-> amra height sekhane debo jekhane data fixed thakbe karon pore jodi data besi
+   	   hoy div er height er theke, tokon data overflow hobe karon height automatic barena
+	   
+	   .box2 {
+			  width: 700px;
+			  height:200px;
+			  border: 1px solid red;
+		}
+		
+	-> jokon amra chaibo div er heiht bere maximum koto porjonto 
+	   jete pare tokon amra max-height use korbo
+	
+		.box2 {
+			  width: 700px;
+			  min-height:200px;
+			  max-height:500px;
+			  border: 1px solid red;
+		 }
+		
+	-> ekhane div er height 500px maximum barbe automatic content 
+	   barar songe songe, kintu data max-height er theke besi hole overflow hobe.
+		
+ => Why use min-width	
+ 
+	-> Sudhu width property use korle image er size 300px er besi hole div 
+	   er baire chole jabe mane overflow hobe. Tai amra min-width property use korbo
+
+		.test{
+			b order:2px solid red;
+			width:200px; 
+		}
+		<img src="" class="test"/>
+		
+	=> 
+		.test{
+			border:2px solid red;
+			min-width:300px; 
+			max-width:800px;
+		}
+		
+		img{
+			width:100%;
+		
+		}
+		<img src="" class="test"/>
+	=> min-width: 300px mane 300px porjonto choto hobe 
+	=> max-width: 800px porjonto boro hobe, 
+ 	=> width:100% mane image ke responsive kora holo
+	
+============================================================
+
+ => 8. CSS Box Sizing 
+============================================================
+  => Why Use Box Sizing ?
+	-> Jokon normlaly kono div er width deoyar por margin padding dile div er total width bere jai,
+	   tokon ei problme theke bachar jonyo box-sizing use kora hoy.
+	   
+	-> box-sizeing: 
+	   -> box-sizing: border-box.  use korar por dive er total width eki thake,
+  	   -> box-sizing:  content-box use kori tahole total width bere jabe 
+   
+		.test{			
+			width:500px; 
+			border:50px solid red;
+			padding:50px;
+			box-sizing: boder-box
+		}
+		
+============================================================
+		
+ => 9. CSS Overflow 
+============================================================ 
+
+  => Over flow is a problem, jeta div er height er baire chole jai,
+	 eta fixed korte hole kichu property use korte hoy
+	 
+  => overflow :  
+  
+	 -> hidden :  je data over flow hoy amra take hide kore di
+
+	 -> scroll :  je data overflow hochhe amra take scroll kore read korbo, horizonta & veritical
+
+	 -> auto   :  automatic data jokon overflow hobe tokon scroll bar asbe
+
+	 -> visible : visible by default porperty, mane overflow thakbe.
+
+ => 3 types of overflow property : 
+ 
+	-> Overflow : vertically, horizontally overflow er khetre kaj korbe
+	
+	-> Overflow -x:   horizontally overflow ke  solve korte lage
+
+	-> Overflow -y:   verticall overflow ke  solve korte lage
+
+	-> 
+		.test{			
+			width:500px; 
+			height:250px;
+			border:2px solid red; 
+			overflow:hidden;
+		}
+============================================================ 
+		
+=> 	10.Border-radius
+============================================================ 
+
+ => border-radius properties
+	-> border-top-left-radius 
+    -> border-top-right-radius 
+    -> border-bottom-right-radius 
+    -> border-bottom-left-radius 
+	
+	-> 
+		.box2 {
+		  width: 500px;
+		  padding: 25px;
+		  border: 2px solid red;
+		  border-top-left-radius: 30px;
+		  border-top-right-radius: 30px;
+		  border-bottom-right-radius: 30px;
+		  border-bottom-left-radius: 30px;
+		}
+		border-radius: 50px 0; (top-left=50px, bottom-right=50px)
+		border-radius:  0 50px; (top-right=50px, bottom-left=50px)
+		
+		border-radius: 50px 30px; (top-left=50px, bottom-right=50px, top-right=50px, bottom-left=50px)
+		
+		.box3 {
+		  width: 500px;
+		  padding: 25px;
+		  border: 2px solid red;
+		  border-radius: 30px 30px;
+		  -webkit-border-radius: 10px 50px;
+		  -moz-border-radius: 10px 50px;
+		}
+		(moz : old mozilla browser er jonyo)
+		(wekit: old chrome browser er jonyo)
+		
+		.box4 {
+		  width: 150px;
+		  height: 150px;
+		  padding: 25px;
+		  border: 2px solid red;
+		  border-radius: 50%;
+		  background-color: pink;
+		}
+		
+============================================================ 		
+		
+=> 11.  Box-Shadow 
+============================================================ 
+ => box-shadow : 2px(h-offset) 5px(v-offset) 10px(blur) 8px(spread) red (color);
+	-> h-offset :  horizontall (left to right) shadow
+	-> v-offset:  vertically (top to bottom ) shadow
+	-> blur: shadow ke koto ta deep dekte chai
+	-> spread:  shadow ke koto ta dur porjonto chorate hobe
+	-> color: color dite hobe shadow r
+ => exmp:
+	.box4 {
+		  width: 150px;
+		  height: 150px; 
+		  border: 2px solid red; 
+		  box-shadow : 2px 5px 10px  8px black  ;
+		}
+	-> opposite dike shadow: 
+	.box4 {
+		  width: 150px;
+		  height: 150px; 
+		  border: 2px solid red; 
+		  box-shadow : -2px -5px 10px  8px black  ;
+		}
+
+	-> (-2px) = right side theke sadow start na hoye left theke start hobe
+	
+	-> Multiple shadow :
+	 
+		.box4 {
+		  width: 150px;
+		  height: 150px; 
+		  border: 2px solid red; 
+		  box-shadow : 2px 5px 10px  8px black, 2px 5px 10px  8px green, 2px 5px 10px  8px blue  ;
+		}
+	-> inset (mane vitor theke shadow)
+	
+		.box4 {
+		  width: 150px;
+		  height: 150px; 
+		  border: 2px solid red; 
+		  box-shadow : 2px 5px 10px  8px black inset ;
+		  -moz-box-shadow : 2px 5px 10px  8px black inset ;
+		  -webkit-box-shadow : 2px 5px 10px  8px black inset ;
+		}
+		(moz : old mozilla browser er jonyo)
+		(wekit: old chrome browser er jonyo)
+		
+============================================================ 
+	
+=> 12. Float 
+============================================================ 	
+ =>  jodi amra pasa pasi duti div niye thaki tahole 1st div ti puro jaiga niye nebe
+	 div er default bhaviour er jonyo, tai 2nd div ti 1st  div er niche chole asbe pasa pasi na ese .
+
+	=> 1st div ti jate tar dan diker puro jaiga na niye nai sei jonyo amra float property use kore thaki,
+	   fole amra duti div ke adjust korte pari
+
+	=> Float er duti value hoy float: left, float:right
+
+	=> Jodi kono div ke float na dite chai tar jonyo float:none
+	
+	=> exmp1:
+		.box1 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:left;
+		}
+		.box2 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:right;
+		}
+		
+	=> exmp2:
+		.box1 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:left;
+		}
+		.box2 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:right;
+		}	
+		
+	=> exmp3:
+		.box1 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:left;
+		}
+		.box2 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:left;
+		}	
+	=> exmp4:
+		.box1 {
+		  width: 150px; 
+		  border: 2px solid red; 
+		  float:left;
+		}
+		.box2 {
+		  width: 400px; 
+		  border: 2px solid red; 
+		  float:left;
+		}
+		.box3 {
+		  width: 7000px; 
+		  border: 2px solid red; 
+		  float:right;
+		}		
+============================================================ 
+	
+=> 13. Clear: 
+============================================================ 
+	=> clear values :
+		-> left
+		-> right
+		-> both
+	
+	=> cases:
+		-> jodi 3 ti div thake 1st div float left  and 2nd div float right thake
+		   tahole 3rd div e float use na korle 3rd div ti 1st and 2nd er vitore duke jabe 
+		-> ei problem solve korar jonyo clear use kora hoy
+		
+	=> Clear:left; :   
+		-> jodi amra mone kori je left side er data besi hote pare  and 3rd div er upor 
+		   chole asbe tahole left side theke clear korte hobe,
+		
+	=> Clear:right;: 
+		-> jodi mone hoy right side er data besi hote pare and 3rd div er upor theke jete pare
+ 		   tahole right side clear korte hobe
+		   
+	=> Clear:both; :
+		-> jodi amra na jani kokon left side theke and kokon right side theke 
+		   data besi hobe and 3rd div er upor chole asbe tokon 
+		   clear:both korte hoy, eti mostly use hoy
+		   
+	Note : jokon amra duti div e float property use kore thaki tokon nicher div tike must
+		   clear property use korte hobe and oi nicher div ti float use korte hobe na.
+
+	=> exmp: 
+	
+		.box1 {
+		  width: 200px;
+		  background-color: pink;
+		  border: 3px solid green;
+		  float: left;
+		}
+		.box2 {
+		  width: 500px;
+		  background-color: blue;
+		  border: 3px solid black;
+		  float: right;
+		}
+		.box3 {
+		  width: 700px;
+		  background-color: gold;
+		  border: 3px solid red;
+		  clear: both;
+		}
+		
+============================================================ 
