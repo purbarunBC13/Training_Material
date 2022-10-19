@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid</title>
+	<style type="text/css">
+		body{
+			font-family: arial,helvetica;
+		}
+		.container{
+			background-color: #eee;
+			width: 700px;
+			height: 800px;
+			margin: 70px auto;
+			display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            /* row-gap: 20px;
+            column-gap: 15px; */
+            grid-gap: 20px 15px;
+			/*grid-template-columns: 100px auto 200px;
+			grid-template-rows: 150px 100px 100px;*/
+
+			/*grid-template-columns: 55% 100px auto;
+			grid-template-rows: 150px 100px 100px;*/
+
+			/*grid-template-columns: 1fr 3fr 1fr;
+			grid-template-rows: 150px 100px 100px;*/
+
+			/*grid-template-columns: 50% repeat(2,150px);
+			grid-template-rows: 150px 100px 100px;*/
+
+			/* grid-template-columns: 50% repeat(2,150px);
+			grid-template-rows: 1fr 200px;
+
+			grid-gap: 20px; */
+		}
+		.items1{
+			background: orangered;
+		}
+		.items2{
+			background: yellowgreen;
+		}
+		.items3{
+			background: slateblue;
+		}
+		.items4{
+			background: hotpink;
+		}
+		.items5{
+			background: royalblue;
+		}
+		.items6{
+			background: goldenrod;
+		}
+	</style>
+</head>
+<body>
+	<h1>  CSS Grid</h1>
+
+	<div class="container">
+		<div class="items items1">First</div>
+		<div class="items items2">Second</div>
+		<div class="items items3">Third</div>
+		<div class="items items4">Fourth</div>
+		<div class="items items5">Fifth</div>
+		<div class="items items6">Sixth</div>
+	</div>
+</body>
+</html>
